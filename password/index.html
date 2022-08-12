@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Generator</title>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="main">
+            <div id="sec-1">
+                <h1>Generate a</br><span>random password</span></h1>
+                <p id="main-desc">Never use an insecure password again.</p>
+            </div>
+            <div id="sec-2">
+                <p>Select password length:</p>
+                <input id="range" type="range" name="pwdLength" min="10" max="20" value="15" oninput="rangevalue.value='Password length: ' + value"/>
+                <output id="rangevalue">Password length: 15</output>
+                <button id="btn-generate" onclick="generatePasswords()">Generate Passwords</button>
+            <hr/>
+            </div>
+            <div id="sec-3">
+                <div>
+                    <p id="pwd1" onclick="copyPassword()"></p>
+                    <p id="pwd1-text"></p>
+                </div>
+                <div>
+                    <p id="pwd2" onclick="copyPassword2()"></p>
+                    <p id="pwd2-text"></p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
