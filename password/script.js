@@ -7,11 +7,18 @@ let output2 = document.getElementById("pwd2")
 let length = document.getElementById("range")
 let pwd = ""
 
+let pass1 = document.getElementById("pwd1").innerText
+let text1 = document.getElementById("pwd1-text")
+let pass2 = document.getElementById("pwd2").innerText
+let text2 = document.getElementById("pwd2-text")
+
 function generatePasswords() {
     generatePassword()
     output1.innerText = pwd
+    text1.innerText = ""
     generatePassword()
     output2.innerText = pwd
+    text1.innerText = ""
 }
 
 function generatePassword() {
@@ -25,8 +32,6 @@ function generatePassword() {
 
 //THESE WORK ON FIREFIRE ONLY. NEED TO FIX.
 function copyPassword() {
-    let pass1 = document.getElementById("pwd1").innerText
-    let text1 = document.getElementById("pwd1-text")
 
     navigator.clipboard.writeText(pass1)
       .then(() => {
@@ -35,12 +40,9 @@ function copyPassword() {
       .catch((err) => {
         text1.innerText = err.message
       })
-
 }
 
 function copyPassword2() {
-    let pass2 = document.getElementById("pwd2").innerText
-    let text2 = document.getElementById("pwd2-text")
 
     navigator.clipboard.writeText(pass2)
       .then(() => {
@@ -49,5 +51,4 @@ function copyPassword2() {
       .catch((err) => {
         text2.innerText = err.message
       })
-
 }
