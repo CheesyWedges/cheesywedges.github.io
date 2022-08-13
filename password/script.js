@@ -12,10 +12,12 @@ let text2 = document.getElementById("pwd2-text")
 function generatePasswords() {
     generatePassword()
     output1.innerText = pwd
+    text1.style.visibility = "visible"  //make the element visible
     text1.innerText = ""
     generatePassword()
     output2.innerText = pwd
     text2.innerText = ""
+    text2.style.visibility = "visible"  //make the element visible
 }
 
 function generatePassword() {
@@ -39,6 +41,11 @@ function copyPassword() {
     .catch((err) => {
       text1.innerText = err.message
     })
+
+    //Hide the msg after 1500 milliseconds
+    setTimeout(() => {
+      text1.style.visibility = "hidden"
+    }, 1500)
 }
 
 function copyPassword2() {
@@ -52,4 +59,9 @@ function copyPassword2() {
     .catch((err) => {
       text2.innerText = err.message
     })
+
+    //Hide the msg after 1500 milliseconds
+    setTimeout(() => {
+      text2.style.visibility = "hidden"
+    }, 1500)
 }
