@@ -8,10 +8,27 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    padding-top: 20px;
+}
+
+p {
+    margin-top: 5px;
+}
+
 img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     padding: 2px;
     border-radius: 10px;
+}
+
+#contents2, #contents3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contents2 img, #contents3 img {
+    margin-right: 25px;
 }
