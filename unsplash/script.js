@@ -1,7 +1,6 @@
 
 const url = "https://api.unsplash.com/photos?client_id=LGEveGm-PeBjwONWY20yOZti3DFE3J1i01UVn6lpfKg"
-
-const url2 = "https://api.unsplash.com/search/photos?query=sensual&client_id=LGEveGm-PeBjwONWY20yOZti3DFE3J1i01UVn6lpfKg"
+const url2 = "https://api.unsplash.com/search/photos?query=aircraft&client_id=LGEveGm-PeBjwONWY20yOZti3DFE3J1i01UVn6lpfKg"
     
 fetch(url)
     .then(response => response.json())
@@ -10,7 +9,7 @@ fetch(url)
         /* Display 10 photos returned */
         for(let i=0; i<data.length; i++) {
             document.getElementById("contents3").innerHTML += `
-                <div>
+                <div class="photo">
                     <img src="${data[i].urls.regular}" alt="" >
                     <p>Photo by: <a href="${data[i].links.html}">${data[i].user.name}</a> on <a href="http://www.unsplash.com">Unsplash</a></p>
                 </div>
@@ -27,7 +26,7 @@ fetch(url)
 
         for (let i = 0; i < postsArray.length; i++) {
             document.getElementById("contents2").innerHTML += `
-                <div>
+                <div class="photo">
                     <img src="${postsArray[i].urls.regular}" alt="" > 
                     <p>Photo by: <a href="${postsArray[i].links.html}">${postsArray[i].user.name}</a> on <a href="http://www.unsplash.com">Unsplash</a></p> 
                 </div>    
@@ -44,7 +43,9 @@ fetch(url2)
 
         /* Display 1 photo based on search query */
         document.getElementById("contents").innerHTML += `
+        <div class="photo">
             <img src="${data.results[rand].urls.regular}" alt="" >
             <p>Photo by: <a href="${data.results[rand].links.html}">${data.results[rand].user.name}</a> on <a href="http://www.unsplash.com">Unsplash</a></p> 
+        </div>
         `
     })
