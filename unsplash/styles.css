@@ -17,8 +17,8 @@ p {
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     padding: 2px;
     border-radius: 10px;
@@ -31,4 +31,9 @@ img {
 
 #contents2 img, #contents3 img {
     margin-right: 25px;
+}
+
+a, a:link, a:visited {
+    color:darkseagreen;
+    text-decoration: underline;
 }

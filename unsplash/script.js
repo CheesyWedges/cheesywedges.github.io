@@ -12,7 +12,7 @@ fetch(url)
             document.getElementById("contents3").innerHTML += `
                 <div>
                     <img src="${data[i].urls.regular}" alt="" >
-                    <p>Photo by: ${data[i].user.name}</p>
+                    <p>Photo by: <a href="${data[i].links.html}">${data[i].user.name}</a> on <a href="http://www.unsplash.com">Unsplash</a></p>
                 </div>
             `
         }
@@ -29,7 +29,7 @@ fetch(url)
             document.getElementById("contents2").innerHTML += `
                 <div>
                     <img src="${postsArray[i].urls.regular}" alt="" > 
-                    <p>Photo by: ${postsArray[i].user.name}</p> 
+                    <p>Photo by: <a href="${postsArray[i].links.html}">${postsArray[i].user.name}</a> on <a href="http://www.unsplash.com">Unsplash</a></p> 
                 </div>    
             `
         }
@@ -45,6 +45,6 @@ fetch(url2)
         /* Display 1 photo based on search query */
         document.getElementById("contents").innerHTML += `
             <img src="${data.results[rand].urls.regular}" alt="" >
-            <p>Photo by: ${data.results[rand].user.name}</p>
+            <p>Photo by: <a href="${data.results[rand].links.html}">${data.results[rand].user.name}</a> on <a href="http://www.unsplash.com">Unsplash</a></p> 
         `
     })
