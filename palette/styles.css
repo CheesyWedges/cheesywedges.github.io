@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #252525;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.main-container {
+    width: 550px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.top-section {
+    align-items: center;
+    height: 90px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 20px;
+}
+
+.top-section, .bottom-section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bottom-section {
+    border-radius: 0 0 10px 10px;
+}
+
+.colour-box {
+    background-color: #ffffff;
+    height: 415px;
+    width: 110px;
+}
+
+.colours {
+    height: 460px;
+}
+
+input[type=color] {
+    width: 61px;
+    height: 42px;
+    border: 0.5px solid #D1D5DB;
+}
+
+select {
+    width: 280px;
+    height: 42px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    color: #111827;
+    padding-left: 10px;
+    appearance: none;
+    background: url("images/arrow.png") no-repeat 248px 50%;
+    /*
+    background-position-x: 248px;
+    background-position-y: 50%;
+    */
+}
+
+button {
+    width: 130px;
+    height: 42px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 12px;
+    color: #374151
+}
+
+p {
+    color: #2B283A;
+    font-size: 12px;
+}
