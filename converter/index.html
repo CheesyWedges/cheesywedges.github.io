@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Units Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="main-container">
+        <div class="sections top-section">
+            <h2>Metric-Imperial Units Converter</h2>
+            <input id="input" type="text" placeholder="00">
+            <button id="btn-convert">Convert</button>
+        </div>
+        <div class="sections bottom-section">
+            <div class="result-box">
+                <h4>Length (Meter / Feet)</h4>
+                <p id="length-output">0 meters = 0 feet | 0 feet = 0 meters</p>
+            </div>
+            <div class="result-box">
+                <h4>Volume (Litres / Gallons)</h4>
+                <p id="volume-output">0 litres = 0 gallons | 0 gallons = 0 litres</p>
+            </div>
+            <div class="result-box mass-box">
+                <h4>Mass (Kilograms / Pounds)</h4>
+                <p id="mass-output">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
