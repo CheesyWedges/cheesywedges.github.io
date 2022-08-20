@@ -1,0 +1,80 @@
+
+@font-face {
+    font-family: Timer;
+    src: url(fonts/CursedTimer.ttf);
+}
+
+body {
+    background: #669bbc;
+    margin: 0;
+}
+
+#scoreboard {
+    background: #003049;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 20px;
+    border: 6px solid white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.section-heading {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.score-section {
+    padding: 15px;
+}
+
+.score-container {
+    background: black;
+    width: 155px;
+    height: 120px;
+}
+
+.score {
+    font-family: Timer;
+    font-size: 90px;
+    color: #c1121f;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.btn-section {
+    background: #003049;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between; /* space-around will also work */
+}
+
+.btn {
+    height: 45px;
+    width: 45px;
+    background: #003049;
+    color: #669bbc;
+    border: 1px solid #669bbc;
+    border-radius: 5px;
+    font-family: Timer;
+    font-size: 18px;
+}
+
+.btn {
+    height: 45px;
+    width: 45px;
+    background: #003049;
+    color: #669bbc;
+    border: 1px solid #669bbc;
+    border-radius: 5px;
+    font-family: Timer;
+    font-size: 18px;
+}
+
+#btn-reset-h, #btn-reset-a {
+    width: 80px;
+    margin-top: 10px;
+}

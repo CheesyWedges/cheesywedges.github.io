@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basketball Score Board</title>
+        <link href="styles.css" rel="Stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="scoreboard">
+            <div class="score-section">
+                <h1 class="section-heading">HOME</h1>
+                <div class="score-container">
+                    <h1 id="home-score" class="score">0</h1>
+                </div>
+                <div class="btn-section">
+                    <button id="btn-h1" class="btn" onclick="add1PointH()">+1</button>
+                    <button id="btn-h1" class="btn" onclick="add2PointsH()">+2</button>
+                    <button id="btn-h1" class="btn" onclick="add3PointsH()">+3</button>
+                </div>
+                <button id="btn-reset-h" class="btn" onclick="resetHomeScore()">Reset</button>
+            </div>
+            <div class="score-section">
+                <h1 class="section-heading">AWAY</h1>
+                <div class="score-container">
+                    <h1 id="away-score" class="score">0</h1>
+                </div>
+                <div class="btn-section">
+                    <button id="btn-a1" class="btn" onclick="add1PointA()">+1</button>
+                    <button id="btn-a2" class="btn" onclick="add2PointsA()">+2</button>
+                    <button id="btn-a3" class="btn" onclick="add3PointsA()">+3</button>
+                </div>
+                <button id="btn-reset-a" class="btn" onclick="resetAwayScore()">Reset</button>
+            </div>
+        </div>
+        <script src="scripts/scoreboard.js"></script>
+    </body>
+</html>
